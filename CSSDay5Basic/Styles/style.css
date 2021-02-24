@@ -1,3 +1,6 @@
+/* ==========================================================================
+                           General
+========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +29,25 @@ header h1 {
   font-size: 5rem;
   font-weight: 800;
   font-family: sans-serif;
-  padding: 1rem;
+  padding: 4rem;
 }
 
-ul {
+/*
+header h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 1rem;
+
+}
+*/
+nav {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background-color: #a39452;
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,13 +59,13 @@ ul {
       justify-content: space-around;
 }
 
-li {
+nav li {
   list-style: none;
   font-size: 2.3rem;
   font-family: sans-serif;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: white;
 }
@@ -55,6 +73,31 @@ a {
 /* ==========================================================================
                            Main section
 ========================================================================== */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 85vh;
+}
+
+main h1 {
+  color: white;
+}
+
+main p {
+  color: white;
+}
+
+main .hero-image {
+  width: 45%;
+  min-height: 60%;
+  background-image: url(/CSSDay5Basic/Images/elon-musk.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 figure {
   background-image: url();
   width: 45%;
