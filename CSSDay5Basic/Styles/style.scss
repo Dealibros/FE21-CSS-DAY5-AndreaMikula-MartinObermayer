@@ -7,4 +7,69 @@
 html {
     font-size: 62.5%;
 }
+body {
+    background-color: rgb(39, 75, 75);
+}
 
+
+/* ==========================================================================
+                           Nav section
+========================================================================== */
+header {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 1rem;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+li {
+    list-style: none;
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    
+}
+    
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ 
+
+
+/* ==========================================================================
+                           Main section
+========================================================================== */
+
+
+
+
+figure {
+    background-image: url();
+      width: 45%;
+}
+    
+figure img {
+     
+    
+}
+
+/* ==========================================================================
+                           Footer section
+========================================================================== */
