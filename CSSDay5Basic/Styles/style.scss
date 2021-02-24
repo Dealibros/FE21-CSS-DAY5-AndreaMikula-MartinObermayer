@@ -12,10 +12,12 @@ html {
     font-size: 62.5%;
 }
 body {
+    font-family: sans-serif;
     background-color: rgb(39, 75, 75);
 }
 
 $main-textcolor: white;
+$back-color: #a39452;
 
 /* ==========================================================================
                            Nav section
@@ -28,7 +30,6 @@ header {
     h1 {
         font-size: 5rem;
         font-weight: 800;
-        font-family: sans-serif;
         padding: 4rem;
     
     }
@@ -46,7 +47,7 @@ header h1 {
 nav {
     padding: 2rem;
     margin-bottom: 3rem;
-    background-color: #a39452;
+    background-color: $back-color;
 
     ul {
         display: flex;
@@ -73,36 +74,63 @@ nav {
 
 main {
     display: flex;
-    justify-content: space-around;
-    height: 85vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin: 0 auto;
+    width: 96%;
 
-    h1 {
-        color: $main-textcolor;
-    }
+    .hero-text {
+        width: 48%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
 
-    p {
-        color: $main-textcolor;
-    }
-
-    .hero-image {
-        width: 45%;
-        min-height: 60%;
-        background-image: url(/CSSDay5Basic/Images/elon-musk.jpg);
-        object-fit: cover;
-    }
-}
-
-
-figure {
-    background-image: url();
-      width: 45%;
-}
+        h1 {
+            text-align: center;
+            color: $main-textcolor;
+            font-size: 3rem;
+        }
     
-img {
-     
-    
+        p {
+            color: $main-textcolor;
+            font-size: 2.3rem;
+        }
+    }
+
+    figure.hero-image {
+        width: 48%; 
+        // max-height: 100%;
+        // overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            /*
+            min-height: 100%;*/
+            object-fit: contain;  
+        }
+
+        figcaption {
+            color: $main-textcolor;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 /* ==========================================================================
                            Footer section
 ========================================================================== */
+
+
+footer {
+    background-color: $back-color;
+
+    h1 {
+        text-align: center;
+        color: $main-textcolor;
+        padding: 2.5rem;
+    }
+}
