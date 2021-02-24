@@ -30,14 +30,15 @@ header {
 header h1 {
   font-family: 'Shippori Mincho', serif;
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 900;
   padding: 4rem;
 }
 
 nav {
-  padding: 2rem;
+  padding: 2.8rem;
   margin-bottom: 3rem;
-  background-color: #d1d1d1;
+  background-color: #ba9fbe;
+  color: white;
 }
 
 nav ul {
@@ -56,120 +57,142 @@ nav li {
   list-style: none;
   font-size: 2.3rem;
   font-family: sans-serif;
+  font-weight: 700;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* ==========================================================================
                            Main section
 ========================================================================== */
-main {
-  /*
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-    margin: 0 auto;
-    width: 96%;
-    */
-}
-
-main .gallery {
-  padding: 2rem;
+.gallery {
   display: -ms-grid;
   display: grid;
-  grid-gap: 2rem;
-      grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve" ". thirteen fourteen .";
+  grid-gap: 3rem;
+      grid-template-areas: "one three twelve twelve" "four five six six" "nine  seven fifteen two" "eleven eight sixteen two" "ten thirteen thirteen fourteen";
+  margin: 3rem 6rem 0rem;
 }
 
-main .box1 {
+.box1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: one;
 }
 
-main .box2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+.box2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
   grid-area: two;
 }
 
-main .box3 {
+.box3 {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: three;
 }
 
-main .box4 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
+.box4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: four;
 }
 
-main .box5 {
+.box5 {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: five;
 }
 
-main .box6 {
+.box6 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: six;
 }
 
-main .box7 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+.box7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: seven;
 }
 
-main .box8 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
+.box8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: eight;
 }
 
-main .box9 {
+.box9 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: nine;
 }
 
-main .box10 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+.box10 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: ten;
 }
 
-main .box11 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+.box11 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: eleven;
 }
 
-main .box12 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
+.box12 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: twelve;
 }
 
-main .box13 {
-  -ms-grid-row: 4;
+.box13 {
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: thirteen;
 }
 
-main .box14 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
+.box14 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
   grid-area: fourteen;
 }
 
-main .hero-text {
+.box15 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: fifteen;
+}
+
+.box16 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: sixteen;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.gallery1 {
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 30px rgba(1, 0, 0, 0.4);
+          box-shadow: 0px 0px 30px rgba(1, 0, 0, 0.4);
+  margin: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-text {
   width: 48%;
   height: 50%;
   display: -webkit-box;
@@ -185,22 +208,22 @@ main .hero-text {
       align-content: center;
 }
 
-main .hero-text h1 {
+.hero-text h1 {
   text-align: center;
   color: black;
   font-size: 3rem;
 }
 
-main .hero-text p {
+.hero-text p {
   color: black;
   font-size: 2.3rem;
 }
 
-main figure.hero-image {
+figure.hero-image {
   width: 48%;
 }
 
-main figure.hero-image img {
+figure.hero-image img {
   width: 100%;
   height: 100%;
   /*
@@ -209,7 +232,7 @@ main figure.hero-image img {
      object-fit: contain;
 }
 
-main figure.hero-image figcaption {
+figure.hero-image figcaption {
   color: black;
   font-size: 1.5rem;
 }
@@ -218,12 +241,13 @@ main figure.hero-image figcaption {
                            Footer section
 ========================================================================== */
 footer {
-  background-color: #d1d1d1;
+  background-color: #ba9fbe;
 }
 
 footer h1 {
   text-align: center;
   color: black;
   padding: 2.5rem;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=style-travel.css.map */
