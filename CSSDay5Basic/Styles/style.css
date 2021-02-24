@@ -100,23 +100,45 @@ main .hero-text {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
   -ms-flex-line-pack: center;
       align-content: center;
+=======
+  height: 85vh;
+  
+>>>>>>> 08adbc138cbc858d835eaae11b0496e963ec3301
 }
 
 main .hero-text h1 {
   text-align: center;
   color: white;
+<<<<<<< HEAD
   font-size: 3rem;
 }
 
 main .hero-text p {
+=======
+  font-size: 7rem;
+}
+
+main p {
+  font-size: 3rem;
+>>>>>>> 08adbc138cbc858d835eaae11b0496e963ec3301
   color: white;
   font-size: 2.3rem;
 }
 
+<<<<<<< HEAD
 main figure.hero-image {
   width: 48%;
+=======
+main .hero-image {
+  width: 45%;
+  min-height: 60%;
+  background-image: url(/FE21-CSS-DAY5-AndreaMikula-MartinObermayer/CSSDay5Basic/Images/elon-musk.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> 08adbc138cbc858d835eaae11b0496e963ec3301
 }
 
 main figure.hero-image img {
